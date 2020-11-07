@@ -8,7 +8,7 @@
 </head>
 <body>
   
-
+<div id="wrapper">
     
 <header>
    
@@ -18,7 +18,7 @@
 
 <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="javascript:void(0)">Home</a></li>
         <li><a href="AboutUs.html">About Us</a></li>
         <li><a href="#">Programs</a></li>
         <li><a href="Contact.html">Contact</a></li>
@@ -27,21 +27,41 @@
     </ul>
 </nav>
 
+
+
 <main>
-    
-   
-    
 
-    <br>
-    <br>
-
-    <div id="Aboutbar">
-        <h2>About Ryasap</h2>
+    <div id="slideshow">
+        <img src="temp1.jpg" alt="" class="slides">
+        <img src="temp2.jpg" alt="" class="slides">
+        <img src="temp3.jpg" alt="" class="slides">
     </div>
 
-    <div id="affiliation">
+    <script>
+        var slideIndex = 0;
+        Carousel();
 
-    </div>
+        function Carousel() {
+            var x = document.getElementsByClassName("slides");
+
+            for(var j = 0; j < x.length; j++) {
+                x[j].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1;
+            }
+
+            x[slideIndex-1].style.display = "block";
+            setTimeout(Carousel, 3000);
+
+        }
+    </script>
+
+
+
+    
 
 </main>
 
@@ -50,6 +70,6 @@
 
 </footer>
 
-
+</div>
 </body>
 </html>
