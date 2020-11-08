@@ -66,9 +66,9 @@ main h2 {
     font-size: xx-large;
 }
 
-#slideshow {
-    padding: 30px 0px 0px 500px;
-}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
 
 .slides {
     display: none;
