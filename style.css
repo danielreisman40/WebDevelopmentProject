@@ -94,7 +94,7 @@ figure{
 /*
 .animate-left {
     position:relative;
-    animation:animateleft 2s
+    animation:animateleft 5s
 }
 
 @keyframes animateleft{
@@ -102,6 +102,13 @@ figure{
     to{left:0;opacity:1}
 }
 */
+
+
+/* Use fragment identifier concept to link to a particular spot in a page
+A hyperlink can also target a specific point in a different document using the document’s URL, 
+followed by a # hash character, then the fragment identifier. 
+For example, the tag <a href=”index.html#top”> targets an element 
+within a document named “index.html” that contains the unique fragment identifier name of “top”.*/
 
 footer{
     color: white;
