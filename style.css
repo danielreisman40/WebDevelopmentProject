@@ -19,9 +19,10 @@ header img {
 }
 
 nav {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: slategrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1fb4e8;
+    
 }
 
 nav ul {
@@ -29,6 +30,7 @@ nav ul {
    padding: 0;
    margin: 0;
    text-align: center;
+   
 }
 
 nav ul li {
@@ -46,19 +48,19 @@ nav a {
     font-weight: bold;
     display: inline-flex;
     justify-content: space-around;
-    width: 7%;
+    width: 10%;
 }
 
 nav a:hover {
     background-color: lightgray; 
     border: white solid 2px;
-    padding: 12px 14px;    
+    padding: 12px 14px;
+    color: black;    
 }
 
 main {
     text-align: center;
-    background-color: #1fb4e8;
-    margin: -10px;
+    background-color: #fed208;
 }
 
 main h2 {
@@ -68,11 +70,14 @@ main h2 {
     display: none;
 }
 
+
 #slideshow {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
+   
 }
+
 #slideshow img {
     width: 640px;
     height: 427px;
@@ -85,6 +90,18 @@ figure{
     margin-left: auto;
     margin-right: auto;
 }
+
+/*
+.animate-left {
+    position:relative;
+    animation:animateleft 2s
+}
+
+@keyframes animateleft{
+    from{left:-300px;opacity:0} 
+    to{left:0;opacity:1}
+}
+*/
 
 footer{
     color: white;
