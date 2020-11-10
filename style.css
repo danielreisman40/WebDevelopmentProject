@@ -12,23 +12,23 @@ header {
     /*padding: 0px 0px 0px 25px;*/
     text-align: center;
     background-color: white;
+    overflow: auto;
+    border-top: slategray solid 10px;
 }
 
 header img {
-    padding-top: 10px;
+    padding: 10px;
+    float: left;
+    
 }
 
 nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #1fb4e8;
-    
+    padding-top: 3.5em;
 }
 
 nav ul {
    list-style-type: none;
    padding: 0;
-   margin: 0;
    text-align: center;
    
 }
@@ -41,7 +41,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     text-align: center;
     padding: 14px 16px;
@@ -52,15 +52,16 @@ nav a {
 }
 
 nav a:hover {
-    background-color: lightgray; 
-    border: white solid 2px;
+    background-color: #fed208; 
+    border: lightslategray solid 2px;
     padding: 12px 14px;
     color: black;    
 }
 
 main {
     text-align: center;
-    background-color: #fed208;
+    background-color: #1fb4e8;
+    border-top: slategray solid 10px;
 }
 
 main h2 {
@@ -94,7 +95,7 @@ figure{
 /*
 .animate-left {
     position:relative;
-    animation:animateleft 5s
+    animation:animateleft 2s
 }
 
 @keyframes animateleft{
@@ -103,12 +104,12 @@ figure{
 }
 */
 
-
 /* Use fragment identifier concept to link to a particular spot in a page
 A hyperlink can also target a specific point in a different document using the document’s URL, 
 followed by a # hash character, then the fragment identifier. 
 For example, the tag <a href=”index.html#top”> targets an element 
 within a document named “index.html” that contains the unique fragment identifier name of “top”.*/
+
 
 footer{
     color: white;

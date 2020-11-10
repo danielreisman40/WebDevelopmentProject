@@ -18,25 +18,24 @@ body {
 header {
     text-align: center;
     background-color: white;
+    overflow: auto;
+    border-top: slategray solid 10px;
 }
 
+
 header img {
-    padding-top: 10px;
+    padding: 10px;
+    float: left;
 }
 
 nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #1fb4e8;
-    margin-bottom: 3.5px;
-
+    padding-top: 3.5em;
 }
 
 nav ul {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
-   text-align: center;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -47,41 +46,65 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;    
+    color: black;
+    font-size: 18px;
     text-align: center;
     padding: 14px 16px;
     font-weight: bold;
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 10%;
+
 }
 
 nav a:hover {
-    background-color: lightgray; 
-    border: white solid 2px;
-    padding: 12px 14px;   
+    background-color: #fed208; 
+    border: lightslategray solid 2px;
+    padding: 12px 14px;
     color: black; 
 }
 
+
 main {
+    border-top: slategray solid 10px;
     text-align: left;
-    background-color: #fed208;
+    background-color: #1fb4e8;    
     clear: both;
     overflow: auto;
     height: 100%;
-
 }
+
 main h2 {
     text-align: center;
     font-size: xx-large;
-}
-p{
-    text-indent: 2em;
-    margin: 1em 10em;
-    font-size: x-large;
+    color: rgb(53, 55, 58);
+
 }
 
+
+#Aboutcontent {
+    background-color: rgba(233, 227, 227, 0.76);
+    text-indent: 2em;
+    margin: 1em 1em;
+    font-size: x-large;
+    border: slategray solid 10px;
+}
+
+#Aboutcontent p {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(53, 55, 58);
+
+}
+
+footer{
+    color: white;
+    background-color: slategray;
+    font-size: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
 
 
     </style>
@@ -90,29 +113,33 @@ p{
 </head>
 <body>
     
+    
+
     <header>
        
         <img src="ryasap-logo.png" alt="">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javascript:void(0)">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+        </nav>
+    
     
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="javascript:void(0)">About Us</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="#">Get Involved</a></li>
-            <li><a href="#">Donate</a></li>
-        </ul>
-    </nav>
-
+    
  
-
     <main>
-        <div id="Aboutbar">
-            <h2>About RYASAP</h2>
-        </div>
+        
+        <h2>About RYASAP</h2>
+        
+        <div id="Aboutcontent">
+
         <p>
             Established in 1985 and serving the Greater Bridgeport region, RYASAP (Regional Youth Adult Social Action Partnership) works to ensure the safe and healthy development of youth, young adults, and families by actively engaging organizations, public officials, and community leaders around issues that matter most to the community.
         </p>
@@ -125,13 +152,18 @@ p{
         <p>
             RYASAP’s work has created statewide “best practice” models for other programs and communities’ adoption.
        </p>    
+        
         <div id="affiliation">
         </div>
+
+        </div>
+
     </main>
     
     
+
     <footer>
-    
+        <p><strong>Regional Youth Adult Social Action Partnership</strong> - 2470 Fairfield Avenue | Bridgeport, CT 06605 - (203)579-2727</p>
     </footer>
     
     </div>
