@@ -16,35 +16,47 @@ body {
 
 
 header {
+    /*padding: 0px 0px 0px 25px;*/
     text-align: center;
     overflow: auto;
-    border-top: slategray solid 10px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 251, 251);
+    
 }
 
 
 header img {
+    width: 250px;
     padding: 10px;
     float: left;
-    mix-blend-mode: multiply; /* This allows the image to blend w/ the background  */
+    mix-blend-mode: multiply;  /*This allows the image to blend w/ the background  */
 }
 
+
 nav {
-    padding-top: 3em;
+    padding-top: 2em;
     margin-left: 25%;
+    
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+   list-style-type: none;
+   padding: 0;
+   text-align: center;
+   
 }
 
 nav ul li {
     display: inline;
-    border: #1fb4e8 solid 5px transparent;
-    padding: 10px 10px;
+    border-bottom: solid 5px transparent;
+    padding: 20px 10px;
+    transition: border-bottom 1s;
 }
+
+nav ul li:hover {
+    border-bottom: #fed208 solid 5px;
+
+}
+
 
 nav a {
     text-decoration: none;
@@ -56,24 +68,14 @@ nav a {
     display: inline-flex;
     justify-content: space-around;
     width: 10%;
-
 }
 
-nav a:hover {
-    background-color: #fed208; 
-    border: lightslategray solid 2px;
-    padding: 12px 14px;
-    color: black; 
-}
 
 
 main {
-    border-top: slategray solid 10px;
     text-align: left;
-    background-color: #1fb4e8;    
-    clear: both;
-    overflow: auto;
-    height: 100%;
+    background-image: linear-gradient(rgb(255, 251, 251), #1fb4e8);  
+    
 }
 
 main h2 {
@@ -85,10 +87,10 @@ main h2 {
 
 
 #Aboutcontent {
-    background-color: rgba(233, 227, 227, 0.76);
-    margin: 1em 1em;
+    /*background-color: rgba(233, 227, 227, 0.76);*/
+    margin: 0em 1em;
     font-size: x-large;
-    border: slategray solid 10px;
+    
 }
 
 #Aboutcontent p {
@@ -99,9 +101,8 @@ main h2 {
 
 }
 
-#Aboutcontent h2
-{
-    text-indent: 1em;
+#Aboutcontent h2 {
+    text-indent: .6em;
     float: left;
     color: rgb(53, 55, 58);
 }
@@ -115,10 +116,16 @@ footer{
     padding: 1em;
 }
 
+@media screen and (min-width: 1500px) {
+    main {
+        height: 100%;
+    }
+}
+
 
     </style>
     <meta charset="UTF-8">
-    <title>RYASAP - About Us</title>
+    <title>RYASAAP - About Us</title>
 </head>
 <body>
     
@@ -126,7 +133,7 @@ footer{
 
     <header>
        
-        <img src="ryasap-logo.png" alt="">
+        <img src="ryasap-logo.png" alt="" width="250px">
 
         <nav>
             <ul>
@@ -145,24 +152,24 @@ footer{
  
     <main>
         
-        <div id="Aboutcontent">
         
+        <div id="Aboutcontent">
+
             <h2>About RYASAP</h2>
 
-            <p>
-                Established in 1985 and serving the Greater Bridgeport region, RYASAP (Regional Youth Adult Social Action Partnership) works to ensure the safe and healthy development of youth, young adults, and families by actively engaging organizations, public officials, and community leaders around issues that matter most to the community.
-            </p>
-            <p>
-                By creating a “neutral table,” community members bring energy and focus, allowing candid conversations to emerge and the catalyst for change to begin.
-            </p>
-            <p>
-                RYASAP’s work tackles the tough issues teens, their families, and their communities face: Community violence prevention, gambling/substance use education, juvenile justice reform, mediation, personal safety, suicide prevention, teen relationships, urban education reform, and youth leadership.
-            </p>
-            <p>
-                RYASAP’s work has created statewide “best practice” models for other programs and communities’ adoption.
-        </p>    
-        
-        <div id="affiliation">
+        <p>
+            Established in 1985 and serving the Greater Bridgeport region, RYASAP (Regional Youth Adult Social Action Partnership) works to ensure the safe and healthy development of youth, young adults, and families by actively engaging organizations, public officials, and community leaders around issues that matter most to the community.
+        </p>
+        <p>
+            By creating a “neutral table,” community members bring energy and focus, allowing candid conversations to emerge and the catalyst for change to begin.
+        </p>
+        <p>
+            RYASAP’s work tackles the tough issues teens, their families, and their communities face: Community violence prevention, gambling/substance use education, juvenile justice reform, mediation, personal safety, suicide prevention, teen relationships, urban education reform, and youth leadership.
+        </p>
+        <p>
+            RYASAP’s work has created statewide “best practice” models for other programs and communities’ adoption.
+       </p>    
+       <div id="affiliation">
         </div>
 
         </div>
@@ -172,7 +179,7 @@ footer{
     
 
     <footer>
-        <p><strong>Regional Youth Adult Social Action Partnership</strong> - 2470 Fairfield Avenue | Bridgeport, CT 06605 - (203)579-2727</p>
+        <p><strong>Regional Youth Adult Social Action Partnership</strong> - 2470 Fairfield Avenue | Bridgeport, CT 06605 - (203) 579-2727</p>
     </footer>
     
     </div>

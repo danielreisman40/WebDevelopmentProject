@@ -3,7 +3,7 @@
 <head>
     <style>
        
-html, body {
+       html, body {
     margin: 0;
     padding: 0;
 } 
@@ -16,34 +16,43 @@ body {
 
 
 header {
+    /*padding: 0px 0px 0px 25px;*/
     text-align: center;
     overflow: auto;
-    border-top: slategray solid 10px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 251, 251);
 }
 
 
 header img {
+    width: 250px;
     padding: 10px;
     float: left;
-    mix-blend-mode: multiply; /* This allows the image to blend w/ the background  */
+    mix-blend-mode: multiply;  /*This allows the image to blend w/ the background  */
 }
 
+
 nav {
-    padding-top: 3em;
+    padding-top: 2em;
     margin-left: 25%;
+    
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    text-align: center;  
 }
 
 nav ul li {
     display: inline;
-    border: #1fb4e8 solid 5px transparent;
-    padding: 10px 10px;
+    border-bottom: solid 5px transparent;
+    padding: 20px 10px;
+    transition: border-bottom 1s;
+}
+
+nav ul li:hover {
+    border-bottom: #fed208 solid 5px;
+
 }
 
 nav a {
@@ -59,16 +68,7 @@ nav a {
 
 }
 
-nav a:hover {
-    background-color: #fed208; 
-    border: lightslategray solid 2px;
-    padding: 12px 14px;
-    color: black; 
-}
-
-
 main {
-    border-top: slategray solid 10px;
     text-align: left;
     background-color: #1fb4e8;    
     clear: both;
@@ -107,6 +107,7 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
 }
+
 
 
     </style>
