@@ -3,111 +3,126 @@
 <head>
     <style>
        
-html, body {
-    margin: 0;
-    padding: 0;
-} 
-       
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #1fb4e8;
-
-}
-
-
-header {
-    text-align: center;
-    background-color: white;
-    overflow: auto;
-    border-top: slategray solid 10px;
-}
-
-
-header img {
-    padding: 10px;
-    float: left;
-}
-
-nav {
-    padding-top: 3.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    border: #1fb4e8 solid 5px transparent;
-    padding: 10px 0px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    padding: 14px 16px;
-    font-weight: bold;
-    display: inline-flex;
-    justify-content: space-around;
-    width: 10%;
-
-}
-
-nav a:hover {
-    background-color: #fed208; 
-    border: lightslategray solid 2px;
-    padding: 12px 14px;
-    color: black; 
-}
-
-
-main {
-    border-top: slategray solid 10px;
-    text-align: left;
-    background-color: #1fb4e8;    
-    clear: both;
-    overflow: auto;
-    height: 100%;
-}
-
-main h2 {
-    text-align: center;
-    font-size: xx-large;
-    color: rgb(53, 55, 58);
-
-}
-
-
-#Programscontent {
-    background-color: rgba(233, 227, 227, 0.76);
-    text-indent: 2em;
-    margin: 1em 1em;
-    font-size: x-large;
-    border: slategray solid 10px;
-}
-
-#Programscontent p {
-    padding-left: 20px;
-    padding-right: 20px;
-    color: rgb(53, 55, 58);
-
-}
-
-footer{
-    color: white;
-    background-color: slategray;
-    font-size: 1em;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
-}
-
-
-    </style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        } 
+               
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1fb4e8;
+        
+        }
+        
+        
+        header {
+            /*padding: 0px 0px 0px 25px;*/
+            text-align: center;
+            overflow: auto;
+            background-color: rgb(255, 251, 251);
+            
+        }
+        
+        
+        header img {
+            width: 250px;
+            padding: 10px;
+            float: left;
+            mix-blend-mode: multiply;  /*This allows the image to blend w/ the background  */
+        }
+        
+        
+        nav {
+            padding-top: 2em;
+            margin-left: 25%;
+            
+        }
+        
+        nav ul {
+           list-style-type: none;
+           padding: 0;
+           text-align: center;
+           
+        }
+        
+        nav ul li {
+            display: inline;
+            border-bottom: solid 5px transparent;
+            padding: 20px 10px;
+            transition: border-bottom 1s;
+        }
+        
+        nav ul li:hover {
+            border-bottom: #fed208 solid 5px;
+        
+        }
+        
+        
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            padding: 14px 16px;
+            font-weight: bold;
+            display: inline-flex;
+            justify-content: space-around;
+            width: 10%;
+        }
+        
+        
+        
+        main {
+            text-align: left;
+            background-image: linear-gradient(rgb(255, 251, 251), #1fb4e8);  
+            
+        }
+        
+        main h2 {
+            text-align: center;
+            font-size: xx-large;
+            color: rgb(53, 55, 58);
+        
+        }
+        
+        
+        #Programscontent {
+            /*background-color: rgba(233, 227, 227, 0.76);*/
+            margin: 0em 1em;
+            font-size: x-large;
+            
+        }
+        
+        #Programscontent p {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: rgb(53, 55, 58);
+            clear: left;
+        
+        }
+        
+        #Programscontent h2 {
+            text-indent: .6em;
+            float: left;
+            color: rgb(53, 55, 58);
+        }
+        
+        footer{
+            color: white;
+            background-color: slategray;
+            font-size: 1em;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1em;
+        }
+        
+        @media screen and (min-width: 1500px) {
+            main {
+                height: 100%;
+            }
+        }
+        
+            </style>
     <meta charset="UTF-8">
     <title>RYASAAP - Programs</title>
 </head>
