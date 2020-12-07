@@ -68,9 +68,7 @@ nav a {
 
 main {
     text-align: center;
-    background-color: #1fb4e8;
     background-image: linear-gradient(  rgb(255, 251, 251), #1fb4e8);
-    height: 100%;
 }
 
 main h2 {
@@ -85,11 +83,12 @@ main h2 {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
+
    
 }
 
 #slideshow img {
-    width: 640px;
+    width: 800px;
     height: 427px;
     margin-left: auto;
     margin-right: auto;
@@ -100,6 +99,41 @@ figure{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+#CovidUpdate {
+    background-color: lightgray;
+    display: block;
+}
+
+
+#CovidUpdate h2 {
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+}
+
+#CovidUpdate p {
+    position: relative;
+    top: -10px;
+    font-size: 25px;
+}
+
+#learnMore {
+    padding-bottom: 20px;
+}
+
+#learnMore a {
+    background-color: white; 
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    border: black 1px solid;
+
+}
+
+
+
 
 /*
 .animate-left {
