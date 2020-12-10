@@ -102,10 +102,9 @@
         padding: 0em;
     }
 
-    #contactform{
-        background-color: beige;
-        margin-bottom: 0em;
-    }
+   
+    
+ 
 
     #floatleft{
         float: left;
@@ -178,14 +177,19 @@
     }
     #allcontacts a{
         color: rgb(153, 149, 149);
-        text-decoration: none; 
+        text-decoration: none;
         
     }
+
     form { 
-        background-color:#eaeaea;
+        background-color: rgb(250, 250, 234);
         padding: 10px;	
-        background-color: rgb(182, 181, 181);
         margin-bottom: 0em;
+        padding: 2em;
+        /*
+        float: left;
+        display: inline;
+        */
     }
     
     label { 
@@ -194,22 +198,79 @@
 	    clear: left;
 	    text-align: right; 
 	    padding-right: 10px;
-        margin-top: 10px; 
+        margin-top: 22px; 
+        margin-left: 5em;
+        margin-right: 1.5em;
     }
         
-    input, textarea { 
+    input{ 
         margin-top: 10px; 
         display: block;
+        padding: 1em;
+        height:50px;
+        font-size: 20px;
+        width: 500px;
     } 
-    #mySubmit { 
-        margin-left: 110px; 
+    textarea{
+        margin-top: 10px; 
+        display: block;
+        padding: 1em;
+        height:100px;
+        font-size: 20px;
+        width: 500px;
+    }
+    #Submit { 
+        margin-left: 214px;
+        height:5px;
+        width: 80px;
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 2em;
+        color: rgb(99, 98, 98);
+        background-color: rgb(133, 209, 240);
+        border: none;
 
     }
     #contactbar{
         font-weight: bold;
-        background-color: #1fb4e8;
+        background-image: linear-gradient(rgb(255, 251, 251), #1fb4e8);  
         padding: 1em;
     }
+
+    #contactform img{
+
+        margin-top: 0em;
+        clear: both;  
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+    #contactform{
+        margin-bottom: 0em;
+        color: rgb(119, 117, 117);
+    }
+    footer{
+        background-color: slategray;
+        font-size: 1em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        clear: both; 
+    }
+    footer p {
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+    }
+
+    #allcontacts img{
+        float: left;
+        margin-right: 2em;
+    } 
+
+
 
 
 
@@ -250,14 +311,22 @@
             <div id="contactform">
         
                 <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-                    <label for="Name">Name:</label>
+                    <label for="Name">Name*</label>
                     <input type="text" name="Name" id="Name">
-                    <label for="Email">E-mail:</label>
+                    <label for="Email">E-mail*</label>
                     <input type="text" name="Email" id="Email">
-                    <label for="Subject">Subject:</label>
-                    <textarea name="Subject" id="Subject" rows="2" cols="20"></textarea>
+                    <label for="Subject">Subject*</label>
+                    <input type="text" name="Subject" id="Subject">
+                    <label for="Subject">Your Message</label>
+                    <textarea name="Message" id="Message" rows="2" cols="20"></textarea>
                     <input id="Submit" type="submit" value="Submit">
+                    
                 </form>
+                
+                <!-- <img src="map.jpg" alt="" width="250px">  -->
+                
+              
+                
 
             </div>
 
@@ -267,6 +336,7 @@
 
             <div id="floatleft">
             <h3>Staff</h2>
+                <img src="abby.jpg" alt="50" width="50px">
                 <p class="name">Marc Donald</p><br>
                 <p class="role">RYASAP Executive Director</p><br>
                 <p class="email"><a href="mailto:mdonald@ryasap.org">mdonald@ryasap.org</a></p><br>
@@ -274,24 +344,29 @@
                 <p class="name">Janice Andersen</p><br>
                 <p class="role">RYASAP Deputy Director</p><br>
                 <p class="email"><a href="mailto:jandersen@ryasap.org">jandersen@ryasap.org</a></p><br>
+                <br>
+                <p class="name">Aileen Morley-McLaughlin</p><br>
+                <p class="role">RYASAP Development Associate</p><br>
+                <p class="email"><a href="mailto:aileen@ryasap.org">aileen@ryasap.org</a></p><br>
+                <br>
+                <p class="name">Mary Pat Healy</p><br>
+                <p class="role">RYASAP TBD</p><br>
+                <p class="email"><a href="mailto:mphealy@ryasap.org">mphealy@ryasap.org</a></p><br>
+                <br>
+                <p class="name">Ashley Blanchard</p><br>
+                <p class="role">RYASAP TBD</p><br>
+                <p class="email"><a href="mailto:aablanchard@ryasap.org">ablanchard@ryasap.org</a></p><br>
 
 
             <h3>The Hub: RBHAO</h2>
                 <p class="name">Giovanna Mozzo</p><br>
-                <p class="role">Co-Director of Programs</p><br>
+                <p class="role">Director of Programs</p><br>
                 <p class="email"><a href="mailto:gmozzo@thehubct.org">gmozzo@thehubct.org</a></p><br>
                 <br>
-                <p class="name">Margaret Watt</p><br>
-                <p class="role">Co-Director of Programs</p><br>
-                <p class="email"><a href="mailto:mwatt@thehubct.org">mwatt@thehubct.org</a></p><br>
-                <br>
-                <p class="name">Rai’jona Crear</p><br>
-                <p class="role">Office Manager</p><br>
-                <p class="email"><a href="mailto:rcrear@thehubct.org">rcrear@thehubct.org</a></p><br>
-
-            <h3>Street Safe Bridgeport</h2>
-                <p class="name">Ebony Epps</p><br>
-                <p class="emailsingle"><a href="mailto:eepps@ryasap.org">eepps@ryasap.org</a></p><br>
+                <p class="name">Daniella Arias</p><br>
+                <p class="role">Regional Program Coordinator</p><br>
+                <p class="email"><a href="mailto:darias@ryasap.org">darias@ryasap.org</a></p><br>
+    
             
             <h3>Bridgeport Juvenile Review Board</h2>
                 <p class="name">Dana Forry</p><br>
@@ -300,33 +375,30 @@
                 <p class="name">Tyese Williams</p><br>
                 <p class="emailsingle"><a href="mailto:twilliams@ryasap.org">twilliams@ryasap.org</a></p><br>
                 <br>
-                <p class="name">RJessica Lopez</p><br>
+                <p class="name">Jessica Lopez</p><br>
                 <p class="emailsingle"><a href="mailto:jlopez@ryasap.org">jlopez@ryasap.org</a></p><br>
                 
-            <h3>Prevention Corps</h2>
-                <p class="name">Austin Terreri</p><br>
-                <p class="emailsingle"><a href="mailto:austin@ryasap.org">austin@ryasap.org</a></p><br>
-                <br>
-                <p class="name">Sheila Wylie</p><br>
-                <p class="emailsingle"><a href="mailto:sheila@ryasap.org">sheila@ryasap.org</a></p><br>
+            
             </div>
 
 
             <div id="floatright">
         
-            <h3>Mediation Services and Training</h2>
-                <p class="name">Lisa Mckenna</p><br>
-                <p class="emailsingle"><a href="mailto:lmckenna@ryasap.org">lmckenna@ryasap.org</a></p><br>
+            
 
             <h3>CT Juvenile Justice Alliance – CTJJA</h2>
-                <p class="name">Abby Andersona</p><br>
-                <p class="emailsingle"><a href="mailto:abby@CTJJA.org">abby@CTJJA.org</a></p><br>
+                
+                <p class="name">Jordan Wilson</p><br>
+                <p class="role">Community Connections Associate</p><br>
+                <p class="email"><a href="mailto:abby@CTJJA.org">abby@CTJJA.org</a></p><br>
                 <br>
                 <p class="name">Christina Quaranta</p><br>
-                <p class="emailsingle"><a href="mailto:christina@CTJJA.org">christina@CTJJA.org</a></p><br>
+                <p class="role">CExecutive Director</p><br>
+                <p class="email"><a href="mailto:christina@CTJJA.org">christina@CTJJA.org</a></p><br>
                 <br>
                 <p class="name">Iliana Pujols</p><br>
-                <p class="emailsingle"><a href="mailto:iliana@CTJJA.org">iliana@CTJJA.org</a></p><br>
+                <p class="role">Director of Community Connections</p><br>
+                <p class="email"><a href="mailto:iliana@CTJJA.org">iliana@CTJJA.org</a></p><br>
             
             <h3>Public Allies CT – Pact</h2>
                 <p class="name">Lindsey Tengatenga</p><br>
@@ -344,6 +416,14 @@
                 <p class="role">Hartford</p><br>
                 <p class="email"><a href="mailto:shaneer@publicallies.org">shaneer@publicallies.org</a></p><br>
                 
+            <h3>Prevention Corps</h2>
+                <p class="name">Austin Terreri</p><br>
+                <p class="emailsingle"><a href="mailto:austin@ryasap.org">austin@ryasap.org</a></p><br>
+                <br>
+                <p class="name">Sheila Wylie</p><br>
+                <p class="emailsingle"><a href="mailto:sheila@ryasap.org">sheila@ryasap.org</a></p><br>
+            
+            
             </div>
 
             </div>
@@ -353,14 +433,16 @@
         </main>
         
         
-        <footer>
         
-        </footer>
         
         </div>
         
     
         </div>
+        <footer>
+            <p><strong>Regional Youth Adult Social Action Partnership</strong> - 2470 Fairfield Avenue | Bridgeport, CT 06605 - (203) 579-2727</p>
+        </footer>
+        
         </body>
     
     </html>
