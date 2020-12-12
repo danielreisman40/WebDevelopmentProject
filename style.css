@@ -78,6 +78,11 @@ main h2 {
     display: none;
 }
 
+.mobileOnly
+{
+    visibility: hidden;
+}
+
 
 #slideshow {
     padding: 5px;
@@ -141,9 +146,29 @@ figure{
     transition: 0.3s ease-in;
 }
 
+.contact
+{
+    background-color: lightblue;
 
+}
+ .contact a 
+ {
+     text-decoration: none;
+ }
 
+#contact_table
+{
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    background-color: darkgray;
+    width: 100%;
+}
 
+.contact_mid
+{
+    
+}
 /*
 .animate-left {
     position:relative;
@@ -164,6 +189,16 @@ within a document named “index.html” that contains the unique fragment ident
 
 
 footer{
+    color: white;
+    background-color: slategray;
+    font-size: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+footer table
+{
     color: white;
     background-color: slategray;
     font-size: 1em;
