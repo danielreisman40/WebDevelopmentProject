@@ -146,6 +146,8 @@ figure{
     transition: 0.3s ease-in;
 }
 
+
+
 .contact
 {
     background-color: lightblue;
@@ -197,12 +199,3 @@ footer{
     padding: 1em;
 }
 
-footer table
-{
-    color: white;
-    background-color: slategray;
-    font-size: 1em;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
-}
