@@ -146,31 +146,18 @@ figure{
     transition: 0.3s ease-in;
 }
 
-
-
-.contact
-{
-    background-color: lightblue;
-
-}
- .contact a 
- {
-     text-decoration: none;
- }
-
-#contact_table
-{
-    margin-left: auto;
-    margin-right:auto;
-    text-align: center;
+#contactmedia {
     background-color: darkgray;
-    width: 100%;
+
 }
 
-.contact_mid
-{
-    
+#contactmedia table {
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+
 /*
 .animate-left {
     position:relative;

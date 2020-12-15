@@ -111,12 +111,15 @@
         padding: 0em;
         margin: 0em;
         margin-left: 2em;
+
+        padding-right: 100px;
     }
     #floatright{
         float: right;
         margin: 0em;
         padding: 0em;
         margin-right: 25em;
+
 
 
 
@@ -144,6 +147,7 @@
         margin: 0em;
         padding: 0em;
         margin-bottom: -0.5em;
+
     }
     .email:hover{
         color:  rgb(243, 8, 8);
@@ -183,8 +187,10 @@
 
     form { 
         padding: 10px;	
-        margin-bottom: 0em;
-        padding: 2em;
+        margin-bottom: 4em;
+        margin-top: 4em;
+        padding: 0em;
+        
         /*
         float: left;
         display: inline;
@@ -207,9 +213,10 @@
         display: block;
         padding: 1em;
         height:50px;
-        font-size: 20px;
+        font-size: 15px;
         width: 500px;
     } 
+        
     textarea{
         margin-top: 10px; 
         display: block;
@@ -245,12 +252,11 @@
     }
 
     #contactform > div {
-        margin: 50px;
-        padding: 0px 150px ;
+        margin-left: 50px;
+        margin-top: 50px;
 
     }
-
-
+   
 
     footer{
         background-color: slategray;
@@ -272,6 +278,40 @@
         float: left;
         margin-right: 2em;
     } 
+    #findus{
+        background-color: rgb(250, 250, 234);
+        padding-bottom: 30px;
+        padding-left: 650;
+        
+    }
+    #findus a{
+        text-decoration: none;
+        color: rgb(92, 149, 187);
+        border-bottom: 1px solid rgb(177, 175, 175);
+        
+    }
+    #findus a:hover{
+        color: rgb(241, 195, 109);
+        
+    }
+    #msg{
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        list-style: none;
+
+    }
+    #imageset{
+     
+        
+    }
+    #personinfo{
+        padding: 0;
+        margin: 0;
+        display: inline;
+        
+    }
+
 
 
 
@@ -315,12 +355,12 @@
         
                 <form method="post" action="https://webdevbasics.net/scripts/demo.php">
                     <label for="Name">Name*</label>
-                    <input type="text" name="Name" id="Name">
+                    <input type="text" name="Name" id="Name" required="required">
                     <label for="Email">E-mail*</label>
-                    <input type="text" name="Email" id="Email">
+                    <input type="text" name="Email" id="Email" required="required">
                     <label for="Subject">Subject*</label>
-                    <input type="text" name="Subject" id="Subject">
-                    <label for="Subject">Your Message</label>
+                    <input type="text" name="Subject" id="Subject" required="required">
+                    <label id="msg" for="Subject" display="textinline">Your Message</label>
                     <textarea name="Message" id="Message" rows="2" cols="20"></textarea>
                     <input id="Submit" type="submit" value="Submit">
                     
@@ -329,39 +369,55 @@
 
 
                 <div>
-                <img src="map.jpg" alt="" width="250px"> 
+                
+                <img src="map.jpg" alt="" width="500"> 
+                
+                
                 </div>
-
-                
-                
-                
-              
                 
 
             </div>
-
+            <div id="findus">
+            <a href="https://www.google.com/maps/place/RYASAP+-+Regional+Youth+Adult+Social+Action+Partnership/@41.1619557,-73.2251375,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80f7ca1acf9e3:0x7be3cf92dcac9084!8m2!3d41.1619517!4d-73.2229488" target="_blank">Click here to find us on a map</a>
+             
+            </div>
             <div id="allcontacts">
 
               
 
             <div id="floatleft">
             <h3>Staff</h2>
-                <img src="abby.jpg" alt="50" width="125px">
+                
+                
+                <div id="imageset">
+                <img src="mark.jpg" alt="50" width="150">
+                <br><br><br><br><br><br>
                 <p class="name">Marc Donald</p><br>
                 <p class="role">RYASAP Executive Director</p><br>
                 <p class="email"><a href="mailto:mdonald@ryasap.org">mdonald@ryasap.org</a></p><br>
+                </div>
+                
                 <br>
+                <div id="imageset">
                 <p class="name">Janice Andersen</p><br>
                 <p class="role">RYASAP Deputy Director</p><br>
                 <p class="email"><a href="mailto:jandersen@ryasap.org">jandersen@ryasap.org</a></p><br>
+                </div>
                 <br>
+                <div id="imageset">
+                <img src="aileen.jpg" alt="50" width="150">
+                <br><br><br><br><br><br>
                 <p class="name">Aileen Morley-McLaughlin</p><br>
                 <p class="role">RYASAP Development Associate</p><br>
                 <p class="email"><a href="mailto:aileen@ryasap.org">aileen@ryasap.org</a></p><br>
+                </div>
                 <br>
+                <div id="imageset">
+                <img src="mary.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Mary Pat Healy</p><br>
                 <p class="role">RYASAP TBD</p><br>
                 <p class="email"><a href="mailto:mphealy@ryasap.org">mphealy@ryasap.org</a></p><br>
+                </div>
                 <br>
                 <p class="name">Ashley Blanchard</p><br>
                 <p class="role">RYASAP TBD</p><br>
@@ -373,21 +429,36 @@
                 <p class="role">Director of Programs</p><br>
                 <p class="email"><a href="mailto:gmozzo@thehubct.org">gmozzo@thehubct.org</a></p><br>
                 <br>
+
+                <div id="imageset">
+                <img src=" daniella.jpg" alt="50" width="120"><br><br><br><br><br><br>
+                <br>
                 <p class="name">Daniella Arias</p><br>
                 <p class="role">Regional Program Coordinator</p><br>
                 <p class="email"><a href="mailto:darias@ryasap.org">darias@ryasap.org</a></p><br>
-    
+                </div>
             
             <h3>Bridgeport Juvenile Review Board</h2>
+                
+                <div id="imageset">
+                <img src="dana.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Dana Forry</p><br>
                 <p class="emailsingle"><a href="mailto:dforry@ryasap.org">dforry@ryasap.org</a></p><br>
+                </div>
                 <br>
+
+                <div id="imageset">
+                <img src="tyese.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Tyese Williams</p><br>
                 <p class="emailsingle"><a href="mailto:twilliams@ryasap.org">twilliams@ryasap.org</a></p><br>
                 <br>
+                </div>
+                
+                <div id="imageset">
+                <img src="jessica.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Jessica Lopez</p><br>
                 <p class="emailsingle"><a href="mailto:jlopez@ryasap.org">jlopez@ryasap.org</a></p><br>
-                
+                </div>
             
             </div>
 
@@ -400,40 +471,66 @@
                 
                 <p class="name">Jordan Wilson</p><br>
                 <p class="role">Community Connections Associate</p><br>
-                <p class="email"><a href="mailto:abby@CTJJA.org">abby@CTJJA.org</a></p><br>
+                <p class="email"><a href="mailto:abby@CTJJA.org">jordyn@ctjja.org</a></p><br>
                 <br>
+                
+                <div id="imageset">
+                <img src="christina.jpg" alt="50" width="100"><br><br><br><br><br>
+                <br><br><br><br>
                 <p class="name">Christina Quaranta</p><br>
                 <p class="role">CExecutive Director</p><br>
                 <p class="email"><a href="mailto:christina@CTJJA.org">christina@CTJJA.org</a></p><br>
+                </div>
                 <br>
+               
+                <div id="imageset">
+                <img src=" illana.jpg" alt="50" width="100"><br><br><br><br><br>
+                <br><br><br><br>
                 <p class="name">Iliana Pujols</p><br>
                 <p class="role">Director of Community Connections</p><br>
                 <p class="email"><a href="mailto:iliana@CTJJA.org">iliana@CTJJA.org</a></p><br>
-            
+                </div>
             <h3>Public Allies CT – Pact</h2>
                 <p class="name">Lindsey Tengatenga</p><br>
                 <p class="emailsingle"><a href="mailto:lindseytpact@gmail.com">lindseytpact@gmail.com</a></p><br>
                 <br>
+                
+                <div id="imageset">
+                <img src="emily.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Emily Gallegher</p><br>
                 <p class="role">New Haven</p><br>
                 <p class="email"><a href="mailto:emilyg@publicallies.org">emilyg@publicallies.org</a></p><br>
+                </div>
                 <br>
+                
+                <div id="imageset">
+                <img src="yancy.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Yancy Singleton</p><br>
                 <p class="role">Bridgeport</p><br>
                 <p class="email"><a href="mailto:yancys@publicallies.org">yancys@publicallies.org</a></p><br>
                 <br>
+                </div>
+                <div id="imageset">
+                <img src="shanee.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Shanee Ransom</p><br>
                 <p class="role">Hartford</p><br>
                 <p class="email"><a href="mailto:shaneer@publicallies.org">shaneer@publicallies.org</a></p><br>
-                
-            <h3>Prevention Corps</h2>
+                </div>
+
+                <h3>Prevention Corps</h2>
+                <div id="imageset">
+                <img src="austin.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Austin Terreri</p><br>
                 <p class="emailsingle"><a href="mailto:austin@ryasap.org">austin@ryasap.org</a></p><br>
+                </div>
                 <br>
+
+                <div id="imageset">
+                <img src="sheila.jpg" alt="50" width="150"><br><br><br><br><br><br>
                 <p class="name">Sheila Wylie</p><br>
                 <p class="emailsingle"><a href="mailto:sheila@ryasap.org">sheila@ryasap.org</a></p><br>
-            
-            
+                </div>
+                
             </div>
 
             </div>
