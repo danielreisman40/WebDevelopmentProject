@@ -74,26 +74,26 @@ main {
 main h2 {
     font-size: xx-large;
 }
-.slides {
-    display: none;
-}
 
 .mobileOnly
 {
-    visibility: hidden;
+    display: none;
 }
 
+/* Slide Show css */
+
+.slides {
+    display: none;
+}
 
 #slideshow {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
-
-   
 }
 
 #slideshow img {
-    width: 800px;
+    width: 1050px;
     height: 427px;
     margin-left: auto;
     margin-right: auto;
@@ -105,6 +105,42 @@ figure{
     margin-right: auto;
 }
 
+.prev {
+    position:absolute;
+    top:50%;
+    left:11%;
+    transform:translate(0%,-50%);
+    font-size: 35px;
+    background-color: rgba(112, 114, 144, .5);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.next {
+    position:absolute;
+    top:50%;
+    right:11%;
+    transform:translate(0%,-50%);
+    font-size: 35px;
+    background-color: rgba(112, 114, 144, .5);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.animate {
+    animation: animate 2s
+}
+
+
+@keyframes animate {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+/* Covid Update Div css*/
 
 #CovidUpdate {
     background-color: lightgray;
@@ -137,8 +173,12 @@ figure{
     margin: 4px 2px;
     text-align: center;
     cursor: pointer;
-    
+    color: rgb(34, 34, 34);
 
+}
+
+.button:visited {
+    color: rgb(34, 34, 34);
 }
 
 .button:hover {
@@ -146,16 +186,65 @@ figure{
     transition: 0.3s ease-in;
 }
 
+/* Contact Div */
+
 #contactmedia {
     background-color: darkgray;
-
+    display: flex;
 }
 
-#contactmedia table {
-    margin-left: auto;
-    margin-right: auto;
+.column {
+    text-align: center;
+    align-items: center;
 }
 
+#contactmedia > .column {
+    margin: 10px;
+    padding: 20px;
+    width: 33.33%;
+}
+
+.column h2 {
+    position: relative;
+    bottom: 30px;
+    padding: 15px 0px;
+    font-size: 40px;
+    border-bottom: solid rgb(71, 71, 71) 4px;
+    
+}
+
+.column a {
+    position: relative;
+    bottom: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: #fed208;
+    border: none;
+    font-size: 23px;
+    padding: 15px;
+    vertical-align: baseline;
+}
+
+.column a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    transition: 0.3s ease-in;
+}
+
+.column p {
+    font-size: 30px;
+    color: #fed208;
+    position: relative;
+    bottom: 15px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialmedia a {
+    width: 25%;
+}
 
 
 /*

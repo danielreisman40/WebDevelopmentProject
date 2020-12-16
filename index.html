@@ -34,10 +34,15 @@
 
     <div id="slideshow">
         <figure>
-            <img src="temp1.jpg" alt="" class="slides animate-left">
-            <img src="temp2.jpg" alt="" class="slides animate-left">
-            <img src="temp3resize.jpg" alt="" class="slides animate-left">
+            <img src="temp1.jpg" alt="" class="slides animate">
+            <img src="temp2.jpg" alt="" class="slides animate">
+            <img src="temp3resize.jpg" alt="" class="slides animate">
         </figure>
+
+        <button class="prev" onclick='plusDivs(-1)'>&#10094;</button>
+        <button class="next" onclick='plusDivs(1)'>&#10095;</button>
+
+
     </div>
 
     <br>
@@ -63,25 +68,49 @@
     </section>
 
     <script>
-        var slideIndex = 0;
-        Carousel();
+    
+        var slideIndex = 1;
+        var time = setInterval(carousel, 7000);
+        carousel();
 
-        function Carousel() {
-            var x = document.getElementsByClassName("slides");
 
-            for(var j = 0; j < x.length; j++) {
-                x[j].style.display = "none";
-            }
-
-            slideIndex++;
-            if (slideIndex > x.length) {
-                slideIndex = 1;
-            }
-
-            x[slideIndex-1].style.display = "block";
-            setTimeout(Carousel, 5000);
-
+        if(document.getElementsByClassName("prev").clicked === true || document.getElementsByClassName("next").clicked === true) {
+            showDivs(slideIndex);
         }
+
+
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+            clearInterval(timer);
+            timer = setInterval(carousel, 7000)
+        }    
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            time; 
+        }
+
+        
+
     </script>
 
 
@@ -93,20 +122,43 @@
 
 <div id="contactmedia">
 
-<table>
+    <div class="column">
 
-    <thead>
-        <th id="call">Call Us:</th>
-        <th id="contact">Contact Us:</th>
-        <th id="follow">Follow Us:</th>
-    </thead>
+        <h2>Call Us</h2>
+
+        <a class="mobileOnly" href:"tel:2035792727">203-579-2727</a>
+        <p class="desktopOnly">203-579-2727</p>
+
+    </div>
+
+    <div class="column">
+
+        <h2>Email Us</h2>
+
+        <a href="Contact.html" style="padding: 15px 50px; position: relative; bottom: 13px;">Email</a>
 
 
-</table>
+    </div>
+
+    <div class="column">
+
+        <h2>Follow Us</h2>
+
+        <div class="socialmedia">
+
+            <a href="https://www.instagram.com/ryasap/">Instagram</a>
+            <a href="https://www.facebook.com/RYASAP/">Facebook</a>
+            <a href="https://twitter.com/RYASAP">Twitter</a>
+
+        </div>
+
+
+
+    </div>
+
 
 
 </div>
-
 
 
 <footer>
